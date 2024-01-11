@@ -170,6 +170,15 @@ export default function Page() {
             />
             <input
               type="text"
+              placeholder="Product Description"
+              value={newProduct.description}
+              onChange={e =>
+                setNewProduct({ ...newProduct, description: e.target.value })
+              }
+              className="mb-2 border p-2"
+            />
+            <input
+              type="text"
               placeholder="Image URL"
               value={newProduct.image}
               onChange={e =>
