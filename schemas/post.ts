@@ -5,6 +5,12 @@ export default defineType({
   title: 'Post',
   type: 'document',
   fields: [
+    {
+      name: 'order',
+      type: 'number',
+      title: 'Order',
+      description: 'Set the order of this post',
+    },
     defineField({
       name: 'title',
       title: 'Title',

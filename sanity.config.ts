@@ -23,7 +23,7 @@ export default defineConfig({
     visionTool(),
   ],
   schema: {
-    types: schemaTypes,
+    types: schemaTypes
   },
   studio: {
     components: {

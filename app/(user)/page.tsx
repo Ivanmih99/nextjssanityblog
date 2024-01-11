@@ -10,12 +10,8 @@ const query = groq`
     ...,
     author->,
     categories[]->
-  } | order(_createdAt desc)
-`
-// - groq 說明
-// "*[_type == 'post']" : 取得全部 type 為 post
-// "..." : all the field
-// "->" : 類似 mongoose 的 populate 做查詢關聯 reference
+  } | order(order asc)
+`;
 
 function PreviewSuspenseFallback() {
   return (
