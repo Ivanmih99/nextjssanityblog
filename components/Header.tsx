@@ -14,10 +14,10 @@ function Header() {
 			<Image priority src="https://cdn.sanity.io/images/hl9czw39/production/585a74794cdb4e46c42127e2fcf022e5e84f7c68-308x72.svg" width={200} height={200} alt="logo"/>
 			</Link>
 			</div>
-		<div className="flex gap-5 ">
-			<Link href="/">HOME</Link>
-			<Link href="/my-projects">MY PROJECTS</Link>
-			<Link href="/products">PRODUCTS</Link>
+		<div className="flex gap-5">
+			<Link className='hover:text-blue-500' href="/">HOME</Link>
+			<Link className='hover:text-blue-500' href="/projects">MY PROJECTS</Link>
+			<Link className='hover:text-blue-500' href="/products">PRODUCTS</Link>
 		</div>
       
     </header>

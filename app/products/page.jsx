@@ -179,14 +179,14 @@ export default function Page() {
             />
             {editingId ? (
               <button
-                className="rounded-full bg-green-500 px-4 py-2 text-white"
+                className="bg-gray-500 hover:bg-gray-100 shadow-md hover:text-black hover:shadow-lg hover:scale-105 duration-75 rounded-full px-4 py-2 text-white"
                 onClick={handleUpdate}
               >
                 Update
               </button>
             ) : (
               <button
-                className="rounded-full bg-gray-700 px-4 py-2 text-white"
+                className="bg-gray-500 hover:bg-gray-100 shadow-md hover:text-black hover:shadow-lg hover:scale-105 duration-75 rounded-full px-4 py-2 text-white"
                 onClick={handleCreate}
               >
                 Create
@@ -210,13 +210,13 @@ export default function Page() {
                 <p className="mb-2 text-gray-500">${item.price}</p>
                 <div className="flex justify-end ">
                   <button
-                    className="rounded-md  bg-gray-500 px-2 py-1 text-white duration-75 hover:bg-gray-600"
+                    className="bg-gray-400 text-white hover:bg-gray-100 shadow-md hover:text-black hover:shadow-lg hover:scale-105 duration-75 rounded-md px-2 py-1"
                     onClick={() => handleEdit(item.id)}
                   >
                     Edit
                   </button>
                   <button
-                    className="ml-2 rounded-md bg-gray-700 px-2 py-1 text-white duration-75 hover:bg-gray-800"
+                    className="bg-gray-600 hover:bg-gray-100 shadow-md hover:text-black hover:shadow-lg hover:scale-105 duration-75 ml-2 rounded-md px-2 py-1 text-white"
                     onClick={() => handleDelete(item.id)}
                   >
                     Delete
@@ -225,7 +225,7 @@ export default function Page() {
               </div>
             ))}
           </div>
-        </div>
+        </div> 
       </ThemeProviders>
     </body>
   )
